@@ -1,11 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react'
 import Fcode from './Image/Fcode.png';
-import { Button,Container } from '@mui/material';
+import { Button } from '@mui/material';
 import { useNavigate,useLocation } from 'react-router-dom';
 import AuthContext from "../Authcontext";
 import Slide_4 from './Slide_4';
 import Slide_2 from './Slide_2';
-import Stack from '@mui/material/Stack';
 import MenuBar from '../MenuBar';
 import CardContent from '@mui/material/CardContent';
 const Slide_3 = () => {
@@ -20,7 +19,7 @@ const Slide_3 = () => {
   };
   //================================================================================================
   const authContext = useContext(AuthContext);
-  const { userDetails, setUserDetails } = authContext;
+  const { userDetails } = authContext;
   const [userDetailsLoaded, setUserDetailsLoaded] = useState(false);
   const curlocation = useLocation();
 
@@ -76,7 +75,7 @@ const Slide_3 = () => {
     return updatedData;
   };
   
-    const [pageScroll, setPageScroll] = useState();
+    // const [pageScroll, setPageScroll] = useState();
     useEffect(() => {
       const updateScrollPercentage = () => {
         const heightOfWindow = window.innerHeight;
@@ -117,7 +116,7 @@ const Slide_3 = () => {
     {<MenuBar />}
     <h1 style={{ textAlign: "center" }}>Game Page</h1>
     <div style={{ textAlign: "center", height: "500px" }}>
-      <img style={{ cursor: "pointer" }} src={Fcode}/>
+      <img style={{ cursor: "pointer" }} src={Fcode} alt='Gameing'/>
       <p style={{ display: "flex", justifyContent: "space-between" }} >
       <Button variant="contained" onClick={BackSlide_4Page} >Back</Button>
       <Button onClick={Slide_4Page} variant="contained" >Next</Button>

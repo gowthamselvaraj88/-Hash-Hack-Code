@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Container } from '@mui/material';
 import Level_1 from './Image/Slide-1.png';
 import AuthContext from "../Authcontext";
 import MenuBar from '../MenuBar';
@@ -9,7 +8,7 @@ import CardContent from '@mui/material/CardContent';
 const Slide_1 = () => {
 
   const authContext = useContext(AuthContext);
-  const { userDetails, setUserDetails } = authContext;
+  const { userDetails } = authContext;
   const [userDetailsLoaded, setUserDetailsLoaded] = useState(false);
   const curlocation = useLocation();
 
@@ -69,7 +68,7 @@ const Slide_1 = () => {
     return updatedData;
   };
 
-  const [pageScroll, setPageScroll] = useState();
+  // const [pageScroll, setPageScroll] = useState();
   useEffect(() => {
     const updateScrollPercentage = () => {
       const heightOfWindow = window.innerHeight;
@@ -108,7 +107,7 @@ const Slide_1 = () => {
       {<MenuBar />}
       <h1 style={{ textAlign: "center" }}>Home Page</h1>
       <div >
-        <img style={{ cursor: "pointer" }} src={Level_1} onClick={gamePage} />
+        <img style={{ cursor: "pointer" }} src={Level_1} onClick={gamePage} alt='Level1' />
       </div>
     </CardContent>
 

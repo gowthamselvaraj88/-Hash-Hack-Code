@@ -1,16 +1,11 @@
 import React, { useState, useEffect, useCallback, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Container } from '@mui/material';
-
 import { useLocation } from 'react-router-dom';
 import AuthContext from "../Authcontext";
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import TextField from '@mui/material/TextField';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardHeader from '@mui/material/CardHeader';
 import Button from '@mui/material/Button';
 
 const LoginPanel = () => {
@@ -27,7 +22,6 @@ const LoginPanel = () => {
             goToLevel1Page();
         }
     }, [userDetails]);
-
     const handleUserNameChange = (event) => {
         setUserName(event.target.value);
     };

@@ -6,18 +6,14 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import IconButton from '@mui/material/IconButton';
-// import { BoxProps } from '@mui/material/Box';
-// import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
-// import PersonAdd from '@mui/icons-material/PersonAdd';
-// import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import AuthContext from "./Authcontext";
 
 export default function MenuBar() {
-  const {authenticated,setAuthenticated,userDetails,setUserDetails} = useContext(AuthContext);
+  const {setAuthenticated} = useContext(AuthContext);
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);

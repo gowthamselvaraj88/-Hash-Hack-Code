@@ -11,7 +11,7 @@ const Final = () => {
     {<MenuBar />}
     <h1 style={{ textAlign: "center" }}>Game Over</h1>
     <div style={{ textAlign: "center", height: "500px" }}>
-      <img style={{ cursor: "pointer" }} src={Level_2}/>
+      <img style={{ cursor: "pointer" }} src={Level_2} alt='Game over'/>
      
     </div>
   </CardContent>

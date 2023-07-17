@@ -1,11 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react'
 import Slide4 from './Image/Slide4.png';
-import { Button,Container } from '@mui/material';
+import { Button } from '@mui/material';
 import { useNavigate,useLocation } from 'react-router-dom';
 import AuthContext from "../Authcontext";
 import Final from './Final';
 import Slide_3 from './Slide_3';
-import Stack from '@mui/material/Stack';
 import MenuBar from '../MenuBar';
 import CardContent from '@mui/material/CardContent';
 
@@ -21,7 +20,7 @@ const Slide_4 = () => {
 
   //======================================================================================
   const authContext = useContext(AuthContext);
-  const { userDetails, setUserDetails } = authContext;
+  const { userDetails } = authContext;
   const [userDetailsLoaded, setUserDetailsLoaded] = useState(false);
   const curlocation = useLocation();
 
@@ -75,7 +74,7 @@ const updateSlideIndex = (userName, newSlideIndex) => {
   return updatedData;
 };
 
-  const [pageScroll, setPageScroll] = useState();
+  // const [pageScroll, setPageScroll] = useState();
   useEffect(() => {
     const updateScrollPercentage = () => {
       const heightOfWindow = window.innerHeight;
@@ -116,7 +115,7 @@ const updateSlideIndex = (userName, newSlideIndex) => {
     {<MenuBar />}
     <h1 style={{ textAlign: "center" }}>Game Page</h1>
     <div style={{ textAlign: "center", height: "500px" }}>
-      <img style={{ cursor: "pointer" }} src={Slide4}/>
+      <img style={{ cursor: "pointer" }} src={Slide4} alt='Gaming'/>
       <p style={{ display: "flex", justifyContent: "space-between" }} >
       <Button variant="contained" onClick={BackFinalPage} >Back</Button>
       <Button onClick={FinalPage} variant="contained" >Next</Button>

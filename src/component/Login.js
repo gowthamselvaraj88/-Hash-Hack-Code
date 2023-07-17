@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import LoginPanel from './LoginPanel';
 import MenuBar from '../MenuBar';
 

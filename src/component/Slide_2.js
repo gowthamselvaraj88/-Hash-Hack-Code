@@ -1,9 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react'
 import Game from './Image/Gaming.png';
 import { useNavigate,useLocation } from 'react-router-dom';
-import { Button,Container } from '@mui/material';
+import { Button } from '@mui/material';
 import Slide_3 from './Slide_3';
-import Stack from '@mui/material/Stack';
 import AuthContext from "../Authcontext";
 import MenuBar from '../MenuBar';
 import CardContent from '@mui/material/CardContent';
@@ -146,7 +145,7 @@ const updateSlideIndex = (userName, newSlideIndex) => {
     {<MenuBar />}
     <h1 style={{ textAlign: "center" }}>Game Page</h1>
     <div style={{ textAlign: "center", height: "500px" }}>
-      <img style={{ cursor: "pointer" }} src={Game}/>
+      <img style={{ cursor: "pointer" }} src={Game} alt='Game'/>
       <p style={{ display: "flex", justifyContent: "space-between" }} >
       <Button variant="contained" disabled >Back</Button>
       <Button onClick={Slide_3Page} variant="contained" >Next</Button> 
