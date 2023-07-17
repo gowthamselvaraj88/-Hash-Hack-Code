@@ -9,7 +9,7 @@ const Final = () => {
   return (
     <CardContent>
     {<MenuBar />}
-    <h2 style={{ textAlign: "center" }}>Game Over</h2>
+    <h1 style={{ textAlign: "center" }}>Game Over</h1>
     <div style={{ textAlign: "center", height: "500px" }}>
       <img style={{ cursor: "pointer" }} src={Level_2}/>
      

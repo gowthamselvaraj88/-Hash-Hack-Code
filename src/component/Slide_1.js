@@ -106,7 +106,7 @@ const Slide_1 = () => {
   return (
     <CardContent style={{ textAlign: "center", height: "500px" }} >
       {<MenuBar />}
-      <h2 style={{ textAlign: "center" }}>Home Page</h2>
+      <h1 style={{ textAlign: "center" }}>Home Page</h1>
       <div >
         <img style={{ cursor: "pointer" }} src={Level_1} onClick={gamePage} />
       </div>

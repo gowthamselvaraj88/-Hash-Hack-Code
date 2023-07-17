@@ -19,13 +19,14 @@ const Slide_2 = () => {
 
   const Slide_3Page = () => {
 
-    if (userDetails.length > 0) {
+    
         
       let userObj = findUserIndex(fetchUserName());
       let scrollPercentage =  userObj['slideIndex'];
-      if(scrollPercentage >=90)
-      navigate("/Slide_3");
-      else
+      if (userDetails.length > 0 ) {
+      // if(scrollPercentage >=80){}
+      navigate("/Slide_3");}
+      else{
       alert("Read the content in slide")     
     }
     }
@@ -143,7 +144,7 @@ const updateSlideIndex = (userName, newSlideIndex) => {
   return (
      <CardContent>
     {<MenuBar />}
-    <h2 style={{ textAlign: "center" }}>Game Page</h2>
+    <h1 style={{ textAlign: "center" }}>Game Page</h1>
     <div style={{ textAlign: "center", height: "500px" }}>
       <img style={{ cursor: "pointer" }} src={Game}/>
       <p style={{ display: "flex", justifyContent: "space-between" }} >

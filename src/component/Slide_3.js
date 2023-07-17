@@ -115,7 +115,7 @@ const Slide_3 = () => {
 
     <CardContent>
     {<MenuBar />}
-    <h2 style={{ textAlign: "center" }}>Game Page</h2>
+    <h1 style={{ textAlign: "center" }}>Game Page</h1>
     <div style={{ textAlign: "center", height: "500px" }}>
       <img style={{ cursor: "pointer" }} src={Fcode}/>
       <p style={{ display: "flex", justifyContent: "space-between" }} >

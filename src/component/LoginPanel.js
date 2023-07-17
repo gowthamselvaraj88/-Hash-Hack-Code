@@ -75,7 +75,7 @@ const LoginPanel = () => {
             }}>
                 <form onSubmit={handleSubmit}>
                     <CardContent>
-                        <h2>Login Page</h2>
+                        <h1>Login Page</h1>
                         <TextField
                             required
                             id="outlined-required"

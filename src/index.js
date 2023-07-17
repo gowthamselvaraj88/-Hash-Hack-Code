@@ -11,6 +11,7 @@ import Final from './component/Final';
 import AuthProvider from "./AuthProvider";
 import AuthContext from "./Authcontext";
 import MenuBar from './MenuBar';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -53,9 +54,8 @@ root.render(
         {() => (
           <>  
          
-            
-            <RouterProvider router={router}>
            
+            <RouterProvider router={router}>
               </RouterProvider>
           </> 
         )}
